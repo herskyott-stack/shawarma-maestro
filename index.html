@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shawarma Maestro — Downtown Ottawa · Lunch & Catering Pre-Order</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Barlow:wght@400;500;700&display=swap');
+*{margin:0;box-sizing:border-box}body{font-family:'Barlow',sans-serif;background:#17130d;color:#f5edda}
+header{background:#e8a317;color:#17130d;padding:16px 26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+header .name{font-family:'Barlow Condensed';font-weight:700;font-size:32px;text-transform:uppercase;letter-spacing:.03em}
+header a{color:#17130d;font-weight:700;text-decoration:none;font-size:18px}
+.hero{padding:56px 26px 30px;max-width:1050px;margin:auto}
+.hero h1{font-family:'Barlow Condensed';font-weight:700;font-size:clamp(52px,9vw,104px);line-height:.95;text-transform:uppercase}
+.hero h1 span{color:#e8a317}
+.hero p{font-size:20px;max-width:54ch;line-height:1.55;margin-top:16px;color:#d9cdb0}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.badges span{border:1px solid #e8a317;color:#e8a317;padding:8px 14px;text-transform:uppercase;font-size:12px;letter-spacing:.16em}
+.board{max-width:1050px;margin:20px auto;padding:0 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#221b10;border-top:5px solid #e8a317;padding:26px}
+.card h2{font-family:'Barlow Condensed';font-size:28px;text-transform:uppercase;margin-bottom:10px}
+.card p{line-height:1.6;color:#d9cdb0}
+.order{max-width:1050px;margin:10px auto 60px;padding:0 26px}
+.order h2{font-family:'Barlow Condensed';font-size:40px;text-transform:uppercase;margin:26px 0 6px}
+.order p{color:#d9cdb0;max-width:60ch;line-height:1.6}
+form{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px}
+input,select,textarea{background:#221b10;border:1px solid #4a3d22;color:#f5edda;padding:13px;font-family:'Barlow';width:100%}
+textarea{grid-column:1/-1}button{grid-column:1/-1;background:#e8a317;border:0;padding:16px;font-family:'Barlow Condensed';font-size:20px;text-transform:uppercase;cursor:pointer}
+footer{border-top:1px solid #4a3d22;padding:22px 26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:14px;color:#d9cdb0}
+@media(max-width:800px){.board{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="name">Shawarma Maestro</div><div>World Exchange Plaza · <a href="tel:+16132334747">(613) 233-4747</a></div></header>
+<div class="hero"><h1>Downtown lunch,<br><span>ready when you are.</span></h1>
+<p>Shawarma Maestro sits on the 2nd floor of World Exchange Plaza, feeding downtown Ottawa offices — including catered lunches praised for punctual delivery and portions. Until now: phone only. This is the pre-order page that fixes that.</p>
+<div class="badges"><span>4.9 ★ · 101 ratings</span><span>Office catering</span><span>Pre-order pickup</span></div></div>
+<div class="board">
+<div class="card"><h2>Lunch Pre-Order</h2><p>Order ahead, skip the food-court line, pick up at Suite 214. Built for the Albert Street lunch rush — individuals and office groups.</p></div>
+<div class="card"><h2>Catering Trays</h2><p>Platters and trays for office lunches, meetings, and holiday gatherings. A December reviewer ordered lunch for their whole office and called it “fast, friendly, and reliable.”</p></div>
+<div class="card"><h2>Holiday Season</h2><p>Corporate Christmas lunches book up in November and December. Send a catering request below with your date and headcount, and get a confirmed order — not a phone tag chain.</p></div>
+</div>
+<div class="order"><h2>Request an order</h2><p>Pick a date and time, tell us what you need. This concept form shows how online pre-ordering would work — today, please call <a href="tel:+16132334747" style="color:#e8a317">(613) 233-4747</a> to place a real order.</p>
+<form onsubmit="document.getElementById('smsg').textContent='Request noted — this is a concept form, so nothing was sent. Please call (613) 233-4747 to order.';return false">
+<input required placeholder="Your name / office"><input placeholder="Phone or email">
+<select><option>Lunch pre-order (pickup)</option><option>Catering tray / platter</option><option>Office group order</option></select>
+<input type="date" aria-label="Date needed"><input type="time" aria-label="Pickup time"><input placeholder="Headcount (for catering)">
+<textarea rows="3" placeholder="What would you like to order?"></textarea>
+<button>Send order request (concept)</button><div id="smsg" style="grid-column:1/-1;color:#e8a317"></div></form></div>
+<footer><span>111 Albert St, Suite 214, Ottawa, ON K1P 1A5 · (613) 233-4747</span><span>Concept built by Jake Hersky (hersky.info)</span></footer>
+</body></html>
